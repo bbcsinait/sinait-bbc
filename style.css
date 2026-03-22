@@ -77,10 +77,10 @@ body {
     justify-content: center;
     text-align: center;
     /* Corrected: Points to the Image folder and a valid filename */
-    .welcome-bg {
-    /* Change the URL to a file that actually exists in your Image folder */
     background: linear-gradient(rgba(55, 46, 60, 0.7), rgba(96, 125, 139, 0.6)), 
-                url('Image/1.JPG') center/cover no-repeat;
+                url('Image/1.jpg') center/cover no-repeat;
+    color: var(--white);
+    padding: 0 20px;
 }
 
 .church-tag { 
@@ -106,14 +106,11 @@ body {
     text-align: center;
 }
 
-.photo-grid-4x2 {
+.photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(2, 300px); 
-    gap: 15px; 
-    width: 100%; 
-    max-width: 1200px;
-    margin: 40px auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .photo-item img {
