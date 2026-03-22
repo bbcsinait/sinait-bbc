@@ -315,3 +315,18 @@ body {
     }
     .schedule-card { padding: 30px 15px; }
 }
+/* Adds space after the phone number */
+.contact-info p {
+    margin-bottom: 30px; 
+}
+
+/* Adds space after the Facebook link */
+.fb-link {
+    display: inline-block; /* Required for margins to work on links */
+    margin-bottom: 40px; 
+}
+
+/* Adds space above the Map frame */
+.map-box {
+    margin-top: 20px;
+}
