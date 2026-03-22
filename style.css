@@ -71,8 +71,16 @@ body {
 
 /* 4. MASSIVE HEADER SECTION */
 .welcome-bg {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Corrected: Points to the Image folder and a valid filename */
+    .welcome-bg {
+    /* Change the URL to a file that actually exists in your Image folder */
     background: linear-gradient(rgba(55, 46, 60, 0.7), rgba(96, 125, 139, 0.6)), 
-                url('Image/1.jpg') center/cover no-repeat;
+                url('Image/1.JPG') center/cover no-repeat;
 }
 
 .church-tag { 
